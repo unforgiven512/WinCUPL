@@ -1,0 +1,41 @@
+Name     devboard8051 ;
+PartNo   00 ;
+Date     11/26/2021 ;
+Revision 01 ;
+Designer Gerad Munsch ;
+Company  Unforgiven Development ;
+Assembly None ;
+Location Hainesville, IL ;
+Device   22v10c ;
+
+/* *************** INPUT PINS *********************/
+PIN 2 = RDn; /*                                 */ 
+PIN 3 = WRn; /*                                 */ 
+PIN 4 = PSEN; /*                                 */ 
+PIN [5,6,7,8,9,10,11,13] = [A8..15]; /*                                 */ 
+
+/* *************** OUTPUT PINS *********************/
+PIN 14 = OEn; /*                                 */ 
+PIN 15 = FlashCSn; /*                                 */ 
+PIN 16 = LCDEn; /*                                 */ 
+PIN 17 = IOExp1CSn; /*                                 */ 
+PIN 18 = IOExp2CSn; /*                                 */ 
+PIN 19 = Ext1CSn; /*                                 */ 
+PIN 20 = Ext2CSn; /*                                 */ 
+PIN 21 = Ext3CSn; /*                                 */ 
+PIN 22 = Ext4CSn; /*                                 */ 
+
+/* *************** PINNODES    *********************/
+PINNODE = LCDEn1; /*                                 */ 
+PINNODE = LCDEn2; /*                                 */ 
+PINNODE = AddrDecEn; /*                                 */ 
+PINNODE = RDnPSENOut;
+
+
+RDnPSENOut = RDn & PSEN;
+
+
+
+
+
+
