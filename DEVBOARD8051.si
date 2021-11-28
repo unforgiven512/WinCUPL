@@ -1,0 +1,24 @@
+Name     devboard8051;
+PartNo   00;
+Date     11/26/2021;
+Revision 01;
+Designer Gerad Munsch;
+Company  Unforgiven Development;
+Assembly None;
+Location Hainesville, IL;
+Device   g22v10c;
+
+
+ORDER: !RDn, !WRn, PSEN, A8, A9, A10, A11, A12, A13, A14, A15, !RDnPSENOut, !OEn, !LCDEn1, !LCDEn2, LCDEn, !AddrDecEn, !GlobalRDn, !FlashCSn, !IOExp1CSn, !IOExp2CSn, !Ext1CSn, !Ext2CSn, !Ext3CSn, !Ext4CSn; 
+
+
+VECTORS:
+110X********************X
+110X********************X
+110X********************X
+110X********************X
+110X********************X
+110X********************X
+110X********************X
+110X********************X
+110X********************X
